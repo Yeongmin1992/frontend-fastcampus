@@ -1,0 +1,63 @@
+<!-- 부라우저는 index.html을 먼저 찾아서 읽는다. -->
+<!-- Doctype은 문서(페이지)의 HTML 버전을 지정하며 HTML5가 표준이다. -->
+<!DOCTYPE html>
+<!-- 꺾쇄 안의 첫번째 값을 tag라고 부르며 시작 tag와 종료 tag로 이뤄진다. -->
+<!-- html tag는 문서 전체의 범위로 HTML 문서가 어디에서 시작하고, 어디에서 끝나는지 알려준다. -->
+<html lang="en">
+<!-- 
+    head tag는 문서의 정보를 나타낸다.
+    웹 부러우저가 해석해야 할 웹피이지의 제목, 설명, 사용할 파일위치, 스타일(CSS) 같은,
+    웹페이지의 보이지 않는 정보를 작성하는 범위이다.
+-->
+
+<head>
+    <!-- meta 태그는 HTML 문서(웹피이지)의 제작자, 내용, 키워드 같은 여러 정보를 검색엔진이나 브라우저에 제공 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- name 속성은 정보의 종류, content 속성은 정보의 값을 나타냄 -->
+    <meta name="author" content="nym0101">
+    <!-- viewport는 브라우저에서 웹페이지가 실제로 보이는 영역(흔히 브라우저 들어가면 보이는 주소창 밑의 실제 화면) -->
+    <!-- 아래의 viewport 정보는 모바일에 적용하기 위함이고 데스크탑에는 영향이 없음 -->
+    <!-- 모바일은 화면의 확대/축소가 가능한데 initial-scale은 default 확대 배수를 지정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        HTMK 문서의 제먹을 정의
+        웹 브라우저에 표시 됨
+     -->
+    <title>Document</title>
+    <!-- 
+        외부 문서를 가져와 연결할 때 사용(대부분 css)
+        rel 속성은 필수 속성으로 가져올 외부문서가 현재의 HTML과 어떤 관계인지를 명시
+        href 속성으로 가져올 문서의 경로를 지정
+     -->
+    <!-- css 연결하기 -->
+    <link rel="stylesheet" href="./main.css /">
+    <!-- 
+        icon 연결하기
+        브라우저 탭에서 보이는 이미지
+     -->
+    <link rel="icon" href="./favicon.png">
+    <!-- script 태그는 js파일을 아래와 같이 연결하거나 -->
+    <script src="./main.js"></script>
+    <!-- js를 아래와 같이 html 문서 안에서 작성하는 방식이 있음 -->
+    <script>
+        console.log('Hello world!')
+    </script>
+    <!-- style tag는 html 내부에 스타일(css)를 작성하는 방식 -->
+    <style>
+        div {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<!-- 
+    body tag는 문서의 구조를 나타낸다.
+    로고, 헤더, 푸터, 내비게이션, 메뉴, 버튼, 이미지 같은 웹페이지의 모여지는 구조를 작성하는
+    범위이다.
+-->
+
+<body>
+    <div>Hello world!</div>
+</body>
+
+</html>
